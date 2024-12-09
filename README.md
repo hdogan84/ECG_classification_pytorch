@@ -40,10 +40,9 @@ In this notebook we show how the initial checks for data quality are performed. 
 First, if not already happened, the Datasets are downloaded from Kaggle. Then the necessary datasets for each notebook are loaded, in case of PTBDB the reshuffling from Notebook 1 is performed.
 We use switches for the configuration of the dataset sampling and to decide, which of the models shall be trained and evaluated. After deciding on the options, the selected models are trained with the configured dataset. A function to save the model (.pkl) and the classification report is always called after each successfull model training.
 
-3. Notebooks 3a / 3b: Essentially the same as 2a / 2b but for the Deep learning models. Aside from general switches to configure datasets and model training, we implement configuration classes for each model to easily manipulate the parameters for our experiments. We implemented three DL Models:
-    1. Simple_ANN
-    2. Simple_CNN
-    3. Advanced_CNN
+3. Notebooks 3a / 3b: Deep learning models. Aside from general switches to configure datasets and model training, we implement configuration classes for each model to easily manipulate the parameters for our experiments. We implemented three DL Models:
+    1. ANN
+    2. CNN (upcoming)
 
     We save all model weights for each experiment and also lossplots and validation accuracy plots (/figures folder).
 
