@@ -1,6 +1,6 @@
 Heartbeat Classification
 ==============================
-In this project, a PyTorch implementation to predict the ECG heartbeat patterns and abnormalities is presented. The work is based on the Kaggle ECG Hearbeat Categorization Dataset. We can show that, even with simple Models, high accuracy scores on predicting either the class of the overall heartbeat pattern shape or the binary distinction between a normal or abnormal heartbeat pattern shape are possible. With Neural Networks, we achieve marginally higher accuracy scores, but observe a trend in "conservativeness", i.e. the model tends to choose more false positive sick individuals than with the simple models. In the medical field this is a desired behavior. Based on these initial findings, further studies can be conducted to examine this distinct behavior of neural networks in the field of detecting ECG heartbeat patterns.
+In this project, a PyTorch implementation to predict the ECG heartbeat patterns and abnormalities is presented. The work is based on the Kaggle ECG Hearbeat Categorization Dataset. We can show that, even with simple Models, high accuracy scores on predicting either the class of the overall heartbeat pattern shape or the binary distinction between a normal or abnormal heartbeat pattern shape are possible. Using Neural Networks, we achieve high accuracy scores. Based on these initial findings, further studies can be conducted to examine this distinct behavior of neural networks in the field of detecting ECG heartbeat patterns.
 
 
 Project Organization on Github
@@ -11,11 +11,9 @@ Project Organization on Github
     ├── data               --> Folder for big files (only locally   
     │   │                      available).
     │   └── KAGGLE_datasets --> Datasets directly downloaded from Kaggle
-    │   └── models_too_big_for_git --> All models (.pkl) that are >100mb
     │
     ├── models             --> The models produced by the notebook code.
-    │   └── DL_Models      --> Deep Learning Models (.h5 files)
-    │   └── ML_Models      --> Simple ML Models (.pkl files) 
+    │   └── DL_Models      --> Deep Learning Models
     │
     ├── notebooks          --> The finalized Jupyter notebooks.
     │   └── result_csv_files --> helper files to build the figures.
@@ -29,9 +27,7 @@ Project Organization on Github
     │
     ├── requirements.txt   --> The requirements to run the Notebooks
     │
-    └── src                --> We use only notebooks as the main  
-                               source for code. This folder is not used at 
-                               all.
+    └── src                --> This folder is practically not used right now.  
 
 
 ## How to use the Github repo / the notebooks
